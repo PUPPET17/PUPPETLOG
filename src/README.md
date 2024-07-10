@@ -11,7 +11,7 @@ heroText: PUPPET1og
 tagline: 您好，我叫轩宇欣，毕业于🎓河北工程技术学院。在校期间积累了不错的编程经验，可熟练运用主流技术栈，独立开发项目。
 actions:
   - text: 查看简历 👣
-    link: ./md/
+    link: ./md/resume
     type: primary
 
   - text: 我的项目 💐
@@ -26,6 +26,16 @@ highlights:
         icon: comment-dots
         details: 以DDD领域驱动设计架构，开发完成分布式抽奖系统。运用了全面的分布式技术栈。
         link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
+
+      - title: OpenAI 应用服务
+        icon: table-columns
+        details: 学习 OpenAi 技术，学习 OpenAi SDK 开发，完成应用场景的对接使用「涵盖支付对接」。
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/tabs.html
+        
+      - title: SpringBoot Stater
+        icon: table-columns
+        details: 通过对业务项目开发中的学习，对同类共性功能的重复开发，凝练成通用的服务治理组件。
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/tabs.html
 
 copyright: false
 footer: |-
