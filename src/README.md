@@ -3,24 +3,24 @@ home: true
 icon: home
 title: 主页
 heroImage: /logo.svg
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: PUPPET1og
-tagline: 您好，我叫轩宇欣，毕业于🎓吉林大学。在校期间积累了不错的编程经验，可熟练运用主流技术栈，独立开发项目。
+tagline: 您好，我叫轩宇欣，毕业于🎓河北工程技术学院。在校期间积累了不错的编程经验，可熟练运用主流技术栈，独立开发项目。
 actions:
   - text: 查看简历 👣
     link: ./md/
     type: primary
 
   - text: 我的项目 💐
-    link: https://openai.gaga.plus/
+    link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
 
 highlights:
   - header: 
-    bgImage: /assets/bg/6-light.svg
-    bgImageDark: /assets/bg/6-dark.svg
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     features:
       - title: Lottery 抽奖系统
         icon: comment-dots
