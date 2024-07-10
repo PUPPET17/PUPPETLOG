@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "PUPPET17",
-    url: "https://mister-hope.com",
+    url: "www.puppet17.fun",
   },
 
   iconAssets: "fontawesome-with-brands",
