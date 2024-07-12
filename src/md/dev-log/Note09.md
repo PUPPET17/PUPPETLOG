@@ -18,11 +18,15 @@ category:
 感觉今天最大的收获就在于学到了在开发的过程中要把整个流程切分一下，分成一块一块的，然后用 MQ 进行后续的操作，用户不需要感知到这一切，他只需要点进去，然后执行一个小的片段，然后剩下的操作可以使用 MQ 来慢慢操作，而不是之前那样直接单线程一个流程写完，又臭又长，返回得还慢，用户体验很不好，学到了流程切片，今天不亏，哈哈哈哈，这个东西还是很有用的
 
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  export default {
+  mounted() {
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  }
+}
 </script>

@@ -46,11 +46,15 @@ category:
 - 在项目的测试过程中发现了原有的数据库行级锁的性能问题，将行级锁优化成为Redis滑块锁，大幅优化了抽奖服务的秒杀性能；
 
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  export default {
+  mounted() {
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  }
+}
 </script>
