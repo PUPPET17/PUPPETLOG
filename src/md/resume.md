@@ -44,3 +44,18 @@ category:
 - 解耦抽奖流程，把抽奖和发奖用MQ消息解耦，避免一个流程太长，导致用户一直等待，使用XXL-JOB定时任务对发送失败的MQ消息进行补偿，保证消息被成功消费；
 - 结合状态模式实现对活动上下线的审批状态流转，保证活动的安全上线；
 - 在项目的测试过程中发现了原有的数据库行级锁的性能问题，将行级锁优化成为Redis滑块锁，大幅优化了抽奖服务的秒杀性能；
+
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

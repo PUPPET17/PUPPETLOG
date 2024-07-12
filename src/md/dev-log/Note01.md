@@ -105,3 +105,17 @@ category:
 
 第一天，脑子还有点迷糊，因为基础不太牢固，所以有些小 bug 花费了挺长时间的，但是至少是跑起来了吧？也还行，路虽远，行则将至嘛，虽然年后要找实习，但是还是慌不得，慢慢来，一口吃不成个大胖子，准备晚上再补一补 Dubbo 基础
 
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

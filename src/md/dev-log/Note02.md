@@ -52,3 +52,17 @@ category:
 2. 了解了分库分表，虽然是第一次接触，但是至少知道了为什么要分库分表，随着项目的进行，就会学会如何分库分表了吧
 3. 了解了 Hash 散列算法，后续看看源码，要搞清楚底层是如何运作的
 
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

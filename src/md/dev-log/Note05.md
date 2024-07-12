@@ -75,3 +75,18 @@ category:
 3. 对于学习的思考
 
    最近陷入了日夜颠倒的死循环，主要就是晚上窝在床上玩手机呢，然后看了会儿星球就想起床学习，一学又搞到两三点三四点，搞不好 bug 多还通了个宵，导致第二天甚至第三天状态低迷，后面要压制学习欲望了，每天该做的做完了就休息，以后每周日休息一天，晚上一点前就睡觉，避免陷入死循环，再多的任务，人的精力也是有限的，只要按部就班稳扎稳打，相信最后也会有收获，不必急于求成
+
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

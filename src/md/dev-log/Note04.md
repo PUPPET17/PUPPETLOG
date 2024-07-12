@@ -41,3 +41,18 @@ category:
 
 1. 越来越喜欢 DDD 架构这种包的组织方式了，虽然包很多，看着有点复杂，但是真的理解了之后，就感觉很干净，扩展性也很好，虽然目前还没完全搞清楚 DDD
 2. 学会了工厂模式，根据奖品类型，从工厂里面拿对应的实现类进行发奖操作
+
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

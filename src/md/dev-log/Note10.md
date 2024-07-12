@@ -47,3 +47,18 @@ category:
 了解了这个之后代码就好写了
 
 感觉这个章节最大的难点就在于如果之前没有设计模式基础的话，会很难受，代码跳过去跳过来有时候找不到方向，一般我遇到这种情况的时候我就会梳理一下业务逻辑，代码结构无论怎么变，也一定是根据业务逻辑来的，之前做的事情一样不少，所以就按照自己想的逻辑去代码中找对应，去看看哪里做的比较，哪里拿到的链路结构，这样就将大问题化成了小问题，然后去对应代码中的每一个部分，这里也就是将逻辑执行步骤进行“打散”的过程，找到了每段代码对应那一段逻辑之后，看一看代码的继承体系，大概也就了解个七七八八了
+
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->

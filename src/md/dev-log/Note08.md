@@ -33,3 +33,18 @@ category:
 4. 在这个 debug 的过程中其实画了一些图，但是因为没有 OSS，所以图片不太好展示，所以使用 vuepress + github pages + github actions 搭建了一个博客，后面有空了会把看源码的过程发上去
 
 虽然很想继续往下学，但是感觉这个项目里面，分库分表这一章节应该是灵魂所在了，虽然还没学后面，但是感觉其他章节更多的是关注业务层面，主要是来解决业务问题的，但是分库分表这一章节感觉能彻彻底底搞明白的话收获应该是很大的，虽然进度慢了，但是通过对源码的阅读也学到了很多东西，比如代码规范，在阅读 SpringBoot 源码的时候，给我最大的感觉就是，其实好的东西是不需要太多注释的，因为他每一步所调用的方法都给你写的很明白，比如 SpringBoot 程序初始化过程，只要英文够好，就跟看~~小学阅读一样~~，不知道花的这两天值不值，毕竟还有一个月就找工作了，是不是应该快点把项目做完
+
+<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
+<script type="text/javascript">
+var sc_project=13017442; 
+var sc_invisible=0; 
+var sc_security="1313702b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
