@@ -66,18 +66,3 @@ category:
    因为没有实际项目经验之前就是直接拿当前时间戳进行获取的，没有进行打乱操作，以后要记住这个操作，避免项目数据被别人抓个包一下子就猜出来了 -.- 好歹穿件衣服，不能裸奔
 
 4. 预习预习明天的内容，哈哈哈，好像要开始上强度了，昨天亲戚结婚忙了一天，半夜才回来，今天就到这把，查点资料预习预习明天的，感觉 DDD 这种包组织方式特别适合每种设计模式和算法的落地，MVC 如果想要算法和设计模式落地的话，感觉要考虑的东西很多很多，要么就是牵一发而动全身，要么就是落地之后包里面有很多的多余的东西，这种方式则不会出现这种情况，一个领域里面，使用一种设计模式，并不会影响其他的包，其他的包只管调用所提供的接口就好了
-
-<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
-<script type="text/javascript">
-var sc_project=13017442; 
-var sc_invisible=0; 
-var sc_security="1313702b"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->

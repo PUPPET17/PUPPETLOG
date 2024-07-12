@@ -41,22 +41,7 @@ copyright: false
 footer: |-
 
 ---
-
 <br/>
-<!-- Default Statcounter code for PUPPET1og http://HTTP://WWW.PUPPET17.FUN -->
-<script type="text/javascript">
-var sc_project=13017442; 
-var sc_invisible=0; 
-var sc_security="1313702b"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13017442/0/1313702b/0/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
 <div style="background: #f7f7f7; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
     <p style="flex: 1; max-width: 50%; font-size: 18px; font-weight: bold; margin: 0 20px;">
