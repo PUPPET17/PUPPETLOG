@@ -30,4 +30,12 @@
 <p>虽然很想继续往下学，但是感觉这个项目里面，分库分表这一章节应该是灵魂所在了，虽然还没学后面，但是感觉其他章节更多的是关注业务层面，主要是来解决业务问题的，但是分库分表这一章节感觉能彻彻底底搞明白的话收获应该是很大的，虽然进度慢了，但是通过对源码的阅读也学到了很多东西，比如代码规范，在阅读 SpringBoot 源码的时候，给我最大的感觉就是，其实好的东西是不需要太多注释的，因为他每一步所调用的方法都给你写的很明白，比如 SpringBoot 程序初始化过程，只要英文够好，就跟看<s>小学阅读一样</s>，不知道花的这两天值不值，毕竟还有一个月就找工作了，是不是应该快点把项目做完</p>
 </div></template>
 
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

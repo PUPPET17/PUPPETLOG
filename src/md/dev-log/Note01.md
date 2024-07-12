@@ -104,3 +104,14 @@ category:
 3. 现在在我眼中，这个 interfaces 模块，就跟以前学的 Dubbo 的服务提供者一样吧？因为这个模块用来实现接口的，所以就会引用其他模块，要调用其他模块的东西就要添加依赖，所以这个模块起起来之后，就带动了所有模块，整个项目也就 run 起来了
 
 第一天，脑子还有点迷糊，因为基础不太牢固，所以有些小 bug 花费了挺长时间的，但是至少是跑起来了吧？也还行，路虽远，行则将至嘛，虽然年后要找实习，但是还是慌不得，慢慢来，一口吃不成个大胖子，准备晚上再补一补 Dubbo 基础
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

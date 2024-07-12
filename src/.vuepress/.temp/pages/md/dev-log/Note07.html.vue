@@ -34,4 +34,12 @@
 <p>总之，要先在大脑里面理清总体的一个执行流程，然后根据这个流程再去看代码要清晰很多，最开始的时候没理清步骤，直接看的代码，那种感觉就像第一天学 DDD 一样，直接一脸懵逼，怎么这么多包，卧槽，第一遍下来大概只学到了百分之五十吧，这一遍大概只学到了整体架构，具体的细节还没掌握，下一次努力啃啃细节，如果要我写整个这一套代码，我肯定写出来会报很多错，但是第一次就想学透整个路程怎么可能呢？好在这一次理清了整体架构，至少有了头绪，不至于开不了头，有了头绪，到处搜一搜，拼拼凑凑也能写，哈哈哈</p>
 </div></template>
 
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

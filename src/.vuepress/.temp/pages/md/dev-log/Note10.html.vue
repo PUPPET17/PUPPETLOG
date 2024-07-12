@@ -35,4 +35,12 @@
 <p>感觉这个章节最大的难点就在于如果之前没有设计模式基础的话，会很难受，代码跳过去跳过来有时候找不到方向，一般我遇到这种情况的时候我就会梳理一下业务逻辑，代码结构无论怎么变，也一定是根据业务逻辑来的，之前做的事情一样不少，所以就按照自己想的逻辑去代码中找对应，去看看哪里做的比较，哪里拿到的链路结构，这样就将大问题化成了小问题，然后去对应代码中的每一个部分，这里也就是将逻辑执行步骤进行“打散”的过程，找到了每段代码对应那一段逻辑之后，看一看代码的继承体系，大概也就了解个七七八八了</p>
 </div></template>
 
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

@@ -41,3 +41,14 @@ category:
 
 1. 越来越喜欢 DDD 架构这种包的组织方式了，虽然包很多，看着有点复杂，但是真的理解了之后，就感觉很干净，扩展性也很好，虽然目前还没完全搞清楚 DDD
 2. 学会了工厂模式，根据奖品类型，从工厂里面拿对应的实现类进行发奖操作
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

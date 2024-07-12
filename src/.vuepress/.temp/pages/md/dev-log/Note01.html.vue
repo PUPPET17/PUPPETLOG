@@ -119,4 +119,12 @@
 <p>第一天，脑子还有点迷糊，因为基础不太牢固，所以有些小 bug 花费了挺长时间的，但是至少是跑起来了吧？也还行，路虽远，行则将至嘛，虽然年后要找实习，但是还是慌不得，慢慢来，一口吃不成个大胖子，准备晚上再补一补 Dubbo 基础</p>
 </div></template>
 
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
