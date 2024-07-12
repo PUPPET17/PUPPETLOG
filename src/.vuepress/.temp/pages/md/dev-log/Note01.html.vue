@@ -11,7 +11,8 @@
 <p>通过对第一节文档的阅读，了解整个项目的生命周期、所需要的技术以及代码提交规范</p>
 </li>
 <li>
-<p>搭建项目结构，理解每个模块应该干什么</p>
+<p>搭建项目结构，简单学习DDD架构，理解每个模块的依赖关系和作用</p>
+<figure><img src="https://ossk.cc/file/a1becec060599d420b82d.png" alt="依赖关系图" tabindex="0" loading="lazy"><figcaption>依赖关系图</figcaption></figure>
 <table>
 <thead>
 <tr>
@@ -52,10 +53,6 @@
 </table>
 </li>
 <li>
-<p>阅读 <a href="https://gitcode.net/KnowledgePlanet/Lottery/-/tree/210801_xfg_initProject" target="_blank" rel="noopener noreferrer">210801_xfg_initProject<ExternalLinkIcon/></a> 分支上的 POM 文件</p>
-<p>通过对 POM 文件的阅读，更加清楚的了解这个项目所使用的技术，并且通过阅读发现项目没有添加 Lombok 来简化开发，具体项目开发是否使用这个插件我不知道，但是我想用，因为我<strong>懒</strong>，所以就给加上了😄</p>
-</li>
-<li>
 <p>跑通 RPC</p>
 <ol>
 <li>定义 response 状态码枚举供通用返回对象 Result 进行使用</li>
@@ -71,21 +68,12 @@
 <li>实现 IActivityBooth 接口</li>
 <li>编写启动类</li>
 <li>编写配置文件 application.yml</li>
-<li>编写测试模块 <strong>这个我是直接加在工程里面的，教程是单独开了一个项目</strong></li>
+<li>编写测试模块</li>
 </ol>
 </li>
 </ol>
 <h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h2>
 <ol>
-<li>
-<p>代码分层不清晰，不知道每个模块应该干什么事</p>
-<p>这个问题该怎么解决呢？我觉得最好的解决办法就是不解决，哈哈哈，因为当初学 MVC 的时候最开始也不清楚为什么要这样分层，为什么就要分 Controller、Service 和 DAO，但是后来经过大量代码的编写，也逐渐熟悉了这样的分层架构，所以现在并不想解决这个问题，具体还是靠后面的代码进行了解和熟悉吧</p>
-</li>
-<li>
-<p>JSON.toJSonString() 方法返回了空 <code v-pre>{}</code></p>
-<p>问题出现原因，忘了加 <code v-pre>@Data</code> 注解，导致没有 <code v-pre>getter/setter</code> 就导致了这个问题，加上注解即可</p>
-<p>解决！</p>
-</li>
 <li>
 <p>数据库乱码问题</p>
 <p>测试模块 RPC 远程调用返回的结果为:</p>
@@ -95,40 +83,66 @@
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code>测试结果：<span class="token punctuation">{</span><span class="token property">"activity"</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">"activityDesc"</span><span class="token operator">:</span><span class="token string">"仅用于插入数据测试"</span><span class="token punctuation">,</span><span class="token property">"activityId"</span><span class="token operator">:</span><span class="token number">100003</span><span class="token punctuation">,</span><span class="token property">"activityName"</span><span class="token operator">:</span><span class="token string">"测试活动"</span><span class="token punctuation">,</span><span class="token property">"beginDateTime"</span><span class="token operator">:</span><span class="token number">1705218054000</span><span class="token punctuation">,</span><span class="token property">"endDateTime"</span><span class="token operator">:</span><span class="token number">1705218054000</span><span class="token punctuation">,</span><span class="token property">"stockCount"</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token property">"takeCount"</span><span class="token operator">:</span><span class="token number">10</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">"code"</span><span class="token operator">:</span><span class="token string">"0000"</span><span class="token punctuation">,</span><span class="token property">"info"</span><span class="token operator">:</span><span class="token string">"成功"</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>解决！</p>
 </li>
+<li>
+<p>MySql 5.x 换 8.x<br>
+maven改为：</p>
+<div class="language-xml line-numbers-mode" data-ext="xml"><pre v-pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>mysql<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>mysql-connector-java<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>8.0.22<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>application.yml改为：</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+   <span class="token key atrule">datasource</span><span class="token punctuation">:</span>
+      <span class="token key atrule">driver-class-name</span><span class="token punctuation">:</span> com.mysql.cj.jdbc.Driver
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ol>
 <h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
-<p>今天干了说明呢？</p>
 <ol>
-<li>配置环境</li>
-<li>跑通 RPC</li>
+<li>
+<h4 id="贫血模型和充血模型" tabindex="-1"><a class="header-anchor" href="#贫血模型和充血模型" aria-hidden="true">#</a> 贫血模型和充血模型</h4>
+<p>贫血模型是指实体类只包含数据，不包含业务逻辑，充血模型是实体类同时包含数据以及业务逻辑。<br>
+贫血模型的对象在设计之初就被定义为只能包含数据，不能加入领域逻辑；逻辑要全部写入Service中；而Service则构建在领域模型之上，需要使用这些贫血模型来传递数据。而这与面向对象设计“背道而驰”；“一个对象是拥有状态和行为的”。<br>
+充血模型也被称为领域模型，将业务逻辑和数据结构紧密耦合在一起，把业务逻辑集成到实体中。这种模型强调在问题领域构建模型（DDD中有<strong>事件风暴</strong>和<strong>界限上下文</strong>等概念），并把问题领域的知识嵌入到代码中。它将业务逻辑和数据操作封装到实体中，实体包含了数据和操作数据的业务逻辑，以及实体之间的关系。</p>
+</li>
+<li>
+<h4 id="关于-po、vo、do、dto" tabindex="-1"><a class="header-anchor" href="#关于-po、vo、do、dto" aria-hidden="true">#</a> 关于 PO、VO、DO、DTO</h4>
+<blockquote>
+<p>PO：persistent object 持久对象</p>
+</blockquote>
+<ul>
+<li>有时也被称为Data对象，对应数据库中的entity，可以简单认为一个PO对应数据库中的一条记录。</li>
+<li>在Mybatis持久化框架中与insert/delet操作密切相关。</li>
+<li>PO中不应该包含任何对数据库的操作。</li>
+</ul>
+<blockquote>
+<p>POJO ：plain ordinary java object 无规则简单java对象<br>
+VO：value object 值对象 / view object 表现层对象</p>
+</blockquote>
+<ul>
+<li>主要对应页面显示（web页面/swt、swing界面）的数据对象。</li>
+<li>可以和表对应，也可以不，这根据业务的需要。</li>
+<li>可以细分包括 req、res</li>
+</ul>
+<blockquote>
+<p>DO（Domain Object）：领域对象，</p>
+</blockquote>
+<ul>
+<li>就是从现实世界中抽象出来的有形或无形的业务实体。通常可以代替部分 PO 的职责。</li>
+</ul>
+<blockquote>
+<p>DTO（TO）：Data Transfer Object 数据传输对象</p>
+</blockquote>
+<ul>
+<li>用在需要跨进程或远程传输时，它不应该包含业务逻辑。</li>
+<li>比如一张表有100个字段，那么对应的PO就有100个属性（大多数情况下，DTO内的数据来自多个表）。但view层只需显示10个字段，没有必要把整个PO对象传递到client，这时我们就可以用只有这10个属性的DTO来传输数据到client，这样也不会暴露server端表结构。到达客户端以后，如果用这个对象来对应界面显示，那此时它的身份就转为VO。</li>
+</ul>
+</li>
+<li>
+<h4 id="为什么ddd" tabindex="-1"><a class="header-anchor" href="#为什么ddd" aria-hidden="true">#</a> 为什么DDD</h4>
+<p>我发现在之前的开发中，经常出现新增功能就需要修改旧的对象或者是直接新增，非常麻烦且能够预见到以后项目继续发展的话这种情况会更严重，而DDD通过提前的领域建模和对模型界限上下文的划定可以在一定程度上减少这种问题。话是这么说不错但是实际上自己尝试用DDD重构以前mvc的项目时还是觉得很难落实，根据业务划分领域和上下文界限时无从下手。多看多学！🤕</p>
+</li>
 </ol>
-<p>具体怎么跑通 RPC 的呢？</p>
-<ol>
-<li>在 common 模块创建通用类</li>
-<li>在 infrastructure 模块创建 dao 接口以及和数据库相对应的 po 类</li>
-<li>在 rpc 模块下创建 RPC 通信接口以及对应的请求和响应的封装类</li>
-<li>然后在 interfaces 模块下实现 rpc 模块的接口，在这里调用 Mapper 进行增删改查</li>
-<li>然后就写配置呗，SpringBoot 配置、Dubbo 配置、MyBatis 配置</li>
-</ol>
-<p>学到了什么呢？</p>
-<ol>
-<li>由于之前学习一直使用的是 MVC 架构，并且命名不太规范，所以对于包的命名现在很不适应，比如什么dto、vo啥的各种 o 不太熟悉，这个就不准备纠结了，准备靠代码量进行熟悉</li>
-<li>对每个模块有了大概的了解，至少知道了接口写在哪个模块，接口实现类在哪个模块以及 Mapper 写在哪</li>
-<li>现在在我眼中，这个 interfaces 模块，就跟以前学的 Dubbo 的服务提供者一样吧？因为这个模块用来实现接口的，所以就会引用其他模块，要调用其他模块的东西就要添加依赖，所以这个模块起起来之后，就带动了所有模块，整个项目也就 run 起来了</li>
-</ol>
-<p>第一天，脑子还有点迷糊，因为基础不太牢固，所以有些小 bug 花费了挺长时间的，但是至少是跑起来了吧？也还行，路虽远，行则将至嘛，虽然年后要找实习，但是还是慌不得，慢慢来，一口吃不成个大胖子，准备晚上再补一补 Dubbo 基础</p>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+
