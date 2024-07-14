@@ -1,9 +1,9 @@
-<template><div><h2 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h2>
+<template><div><h2 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h2>
 <ul>
 <li>[x] 表设计</li>
 <li>[x] 抽奖领域模块开发</li>
 </ul>
-<h2 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程" aria-hidden="true">#</a> 学习过程</h2>
+<h2 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程"><span>学习过程</span></a></h2>
 <ol>
 <li>查询分库分表相关知识点，了解到垂直和水平分库分表，主要是为了解决数据量过大导致 MySQL 查询慢、单体容量过大问题</li>
 <li>开始写代码
@@ -18,7 +18,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h2>
+<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h2>
 <ol>
 <li>
 <p>为什么在设计阶段就考虑分库分表等问题</p>
@@ -39,7 +39,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2>
 <p>今天主要把抽奖算法给搞定了，虽然代码不多，但是很难理解，最开始都搞不清楚为什么这样子就实现了抽奖算法，不懂这个概率是如何保证的，然后 debug 了好久，发现其实就是一个 128 长度的数组，然后经过哈希散列排列，保证随机的均匀性，其实这 128 长度的数组就已经保证了抽奖的概率，假设不经过哈希算法，直接放进去，假设两个的抽奖概率是 0.1 和 0.2，那么放进去的时候就是下标 1~10 全是第一个奖品，下标 11 ~ 30 全是第二个奖品，随机数生成的是 1 ~ 100，那么第一个奖品也就是有 10 个数字能中奖，那不就是 10% 的中奖概率了么，加哈希散列只是为了均匀分布，增加随机性和公平性</p>
 <p>收获：</p>
 <ol>
@@ -49,16 +49,4 @@
 </ol>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

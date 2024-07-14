@@ -1,8 +1,8 @@
-<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h3>
+<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h3>
 <ul>
 <li>[x] 简单工厂搭建发奖领域</li>
 </ul>
-<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程" aria-hidden="true">#</a> 学习过程</h3>
+<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程"><span>学习过程</span></a></h3>
 <ol>
 <li>
 <p>表结构变了，先导入 SQL，然后该对应的 PO 类，然后改一下 Mapper 文件</p>
@@ -29,26 +29,14 @@
 </ol>
 </li>
 </ol>
-<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h2>
+<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h2>
 <p>今天还没遇到啥问题，代码比较简单，主要是数据库字段规范之后，好多 Mapper 要改 T.T，最开始我还在纠结要不要当初建表的时候就改了</p>
 <p><strong>就很气，本来能学两小节的，md，电脑被亲戚孩子给整挂了，直接开不了机了，麻了，修电脑都修了两小时，系统还重装了，又重装环境</strong></p>
-<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2>
 <ol>
 <li>越来越喜欢 DDD 架构这种包的组织方式了，虽然包很多，看着有点复杂，但是真的理解了之后，就感觉很干净，扩展性也很好，虽然目前还没完全搞清楚 DDD</li>
 <li>学会了工厂模式，根据奖品类型，从工厂里面拿对应的实现类进行发奖操作</li>
 </ol>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

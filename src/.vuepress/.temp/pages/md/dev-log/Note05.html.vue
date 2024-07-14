@@ -1,8 +1,8 @@
-<template><div><h2 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h2>
+<template><div><h2 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h2>
 <ul>
 <li>[x] 活动领域的配置与状态</li>
 </ul>
-<h2 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程" aria-hidden="true">#</a> 学习过程</h2>
+<h2 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程"><span>学习过程</span></a></h2>
 <ol>
 <li>包结构变化，调整对应的包</li>
 <li>了解活动创建的整个流程，然后将流程进行编排(其实就是落库的步骤呗)，写对应的 repository 层代码
@@ -40,27 +40,27 @@
 </ol>
 </li>
 </ol>
-<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h2>
+<h2 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h2>
 <ol>
 <li>
 <p>为什么要使用 <code v-pre>BeanUtils.copyProperties()</code></p>
 <p>因为原来很少使用这种方法，以前都是 new 对象，然后把传进来的对象手动一个一个赋值，对这个方法不太了解，简单来说就是实现对象的拷贝，属性名相同的就进行拷贝，属性名不相同的就不进行操作，底层使用反射，首先把读写权限都设置为 true，然后再进行获取和赋值操作，这种操作是 <strong>浅拷贝</strong></p>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token class-name">Modifier</span><span class="token punctuation">.</span><span class="token function">isPublic</span><span class="token punctuation">(</span>readMethod<span class="token punctuation">.</span><span class="token function">getDeclaringClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getModifiers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    readMethod<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token class-name">Object</span> value <span class="token operator">=</span> readMethod<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>source<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token class-name">Modifier</span><span class="token punctuation">.</span><span class="token function">isPublic</span><span class="token punctuation">(</span>writeMethod<span class="token punctuation">.</span><span class="token function">getDeclaringClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getModifiers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    writeMethod<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-writeMethod<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">Modifier</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">isPublic</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">readMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">getDeclaringClass</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">().</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">getModifiers</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">())</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">    readMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">setAccessible</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">true</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">Object</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> value </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> readMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">invoke</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(source);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">Modifier</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">isPublic</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">writeMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">getDeclaringClass</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">().</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">getModifiers</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">())</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">    writeMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">setAccessible</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">true</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">writeMethod</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">invoke</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(target, value);</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>数据库 bug <code v-pre>### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE4\xB8\x80\xE7\xAD\x89...' for column 'award_name' at row 1</code></p>
 <p>中文插入乱码问题，我建数据库的时候设置了 utf8，但是建表的时候默认没有设置成 <code v-pre>utf8</code>，使用的编码是 <code v-pre>latin1</code>，所以需要修改字段的编码为 <code v-pre>utf8</code></p>
 </li>
 </ol>
-<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2>
 <ol>
 <li>
 <p>包结果的变化</p>
@@ -85,16 +85,4 @@ writeMethod<span class="token punctuation">.</span><span class="token function">
 </ol>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

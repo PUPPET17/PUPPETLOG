@@ -1,14 +1,14 @@
-<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h3>
+<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h3>
 <ul>
 <li>[x] ID 生成策略开发</li>
 </ul>
-<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程" aria-hidden="true">#</a> 学习过程</h3>
+<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程"><span>学习过程</span></a></h3>
 <ol>
 <li>
 <p>先看视频了解用到了啥</p>
 </li>
 <li>
-<p>看小傅哥策略模式的<a href="https://mp.weixin.qq.com/s/zOFLtSFVrYEyTuihzwgKYw" target="_blank" rel="noopener noreferrer">文章<ExternalLinkIcon/></a></p>
+<p>看小傅哥策略模式的<a href="https://mp.weixin.qq.com/s/zOFLtSFVrYEyTuihzwgKYw" target="_blank" rel="noopener noreferrer">文章</a></p>
 </li>
 <li>
 <p>看代码结构</p>
@@ -23,12 +23,12 @@
 <p>实操</p>
 </li>
 </ol>
-<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h3>
+<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h3>
 <ol>
 <li>什么是雪花算法</li>
 <li>项目代码中的雪花算法为什么要这么写</li>
 </ol>
-<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h3>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h3>
 <ol>
 <li>
 <p>对策略模式的新看法</p>
@@ -65,16 +65,4 @@
 </ol>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

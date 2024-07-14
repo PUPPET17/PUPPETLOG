@@ -1,8 +1,8 @@
-<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h3>
+<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h3>
 <ul>
 <li>[x] 在应用层编排抽奖过程</li>
 </ul>
-<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h3>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h3>
 <p>有了前面的模板模式的基础，这一章节相对来说比较容易，自己实现的时候也没有什么大问题，大体流程就是写接口，编排流程，然后写实现类，然后写 Mapper，至于为什么花了两三天，这就不得不说上一章的分库分表了，没写过 SpringBoot Starter，没写过 MyBatis 插件，对 AOP 没有深刻的理解，纯硬啃下来的，但是记不太劳，所以晚上睡不着觉，总感觉缺点什么东西，就花了两天干了如下几件事：</p>
 <ol>
 <li>
@@ -30,16 +30,4 @@
 <p>虽然很想继续往下学，但是感觉这个项目里面，分库分表这一章节应该是灵魂所在了，虽然还没学后面，但是感觉其他章节更多的是关注业务层面，主要是来解决业务问题的，但是分库分表这一章节感觉能彻彻底底搞明白的话收获应该是很大的，虽然进度慢了，但是通过对源码的阅读也学到了很多东西，比如代码规范，在阅读 SpringBoot 源码的时候，给我最大的感觉就是，其实好的东西是不需要太多注释的，因为他每一步所调用的方法都给你写的很明白，比如 SpringBoot 程序初始化过程，只要英文够好，就跟看<s>小学阅读一样</s>，不知道花的这两天值不值，毕竟还有一个月就找工作了，是不是应该快点把项目做完</p>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

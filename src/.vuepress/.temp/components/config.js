@@ -1,11 +1,9 @@
-import { defineClientConfig } from "@vuepress/client";
-import { hasGlobalComponent } from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/vuepress-shared/lib/client/index.js";
-import { h } from "vue";
+import { defineClientConfig } from "vuepress/client";
+import { hasGlobalComponent } from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/@vuepress/helper/lib/client/index.js";
 
 import { useScriptTag } from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/@vueuse/core/index.mjs";
 import Badge from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
 import FontIcon from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import BackToTop from "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 import "C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
@@ -36,6 +34,6 @@ export default defineClientConfig({
 
   },
   rootComponents: [
-    () => h(BackToTop, {}),
+
   ],
 });

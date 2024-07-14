@@ -1,4 +1,4 @@
-<template><div><h2 id="个人信息" tabindex="-1"><a class="header-anchor" href="#个人信息" aria-hidden="true">#</a> 个人信息</h2>
+<template><div><h2 id="个人信息" tabindex="-1"><a class="header-anchor" href="#个人信息"><span>个人信息</span></a></h2>
 <ul>
 <li>姓名</li>
 <li>电话</li>
@@ -7,12 +7,12 @@
 <li>工作时间</li>
 <li>Github：https://github.com/PUPPET17</li>
 </ul>
-<h2 id="毕业院校" tabindex="-1"><a class="header-anchor" href="#毕业院校" aria-hidden="true">#</a> 毕业院校</h2>
+<h2 id="毕业院校" tabindex="-1"><a class="header-anchor" href="#毕业院校"><span>毕业院校</span></a></h2>
 <ul>
 <li>时间、院校、专业、学位</li>
 <li>荣誉、成绩</li>
 </ul>
-<h2 id="专业技能" tabindex="-1"><a class="header-anchor" href="#专业技能" aria-hidden="true">#</a> 专业技能</h2>
+<h2 id="专业技能" tabindex="-1"><a class="header-anchor" href="#专业技能"><span>专业技能</span></a></h2>
 <ul>
 <li>熟练使用 IDEA、Eclipse、Visual Studio Code、Navicat、PostMan、Git、Maven、SVN 等开发工具。</li>
 <li>熟练掌握 Java 知识，具备良好的面向对象编程思想；</li>
@@ -22,8 +22,8 @@
 <li>熟悉 Kafka 等常用的消息中间件进行消息的异步数据处理</li>
 <li>熟悉 Linux 的基本使用及常见命令，有云服务器使用和Docker容器化应用程序开发部署的经验，具备常见场景的系统操作能力。</li>
 </ul>
-<h2 id="项目经验" tabindex="-1"><a class="header-anchor" href="#项目经验" aria-hidden="true">#</a> 项目经验</h2>
-<h3 id="_1-营销活动平台-lottery-微服务抽奖系统" tabindex="-1"><a class="header-anchor" href="#_1-营销活动平台-lottery-微服务抽奖系统" aria-hidden="true">#</a> 1. 营销活动平台 - Lottery 微服务抽奖系统</h3>
+<h2 id="项目经验" tabindex="-1"><a class="header-anchor" href="#项目经验"><span>项目经验</span></a></h2>
+<h3 id="_1-营销活动平台-lottery-微服务抽奖系统" tabindex="-1"><a class="header-anchor" href="#_1-营销活动平台-lottery-微服务抽奖系统"><span>1. 营销活动平台 - Lottery 微服务抽奖系统</span></a></h3>
 <ul>
 <li><strong>描述：</strong> Lottery是营销平台的重要微服务之一，该服务运用抽象和 DDD 领域驱动设计知识，围绕抽奖服务建设领域服务，实现了人群过滤器、多种抽奖策略、活动发布、奖品发放等功能。</li>
 <li><strong>系统架构：</strong> 以 DDD 领域驱动设计开发的分布式系统</li>
@@ -36,16 +36,4 @@
 </ul>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

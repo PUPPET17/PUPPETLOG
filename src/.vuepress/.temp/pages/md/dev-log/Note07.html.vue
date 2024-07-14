@@ -1,10 +1,10 @@
-<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h3>
+<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h3>
 <ul>
 <li>[x] 分库分表组件</li>
 </ul>
-<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h3>
+<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h3>
 <p>问题就不说了，这一章节全是问题 T.T，基础不牢，地动山摇啊！！！</p>
-<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h3>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h3>
 <p>首先建立一个大局观，要实现一个分库分表组件，那么先要学会如何编写 SpringBoot Starter，然后这个 Starter 需要实现的功能是分库分表，那么一定是有多个数据源，这个数据源从项目的 yml 配置文件传进来，然后就要实现多数据源的切换，然后分表操作就是要修改 SQL 的表名，所以需要做的事情大概是如下：</p>
 <ol>
 <li>读取数据源信息</li>
@@ -34,16 +34,4 @@
 <p>总之，要先在大脑里面理清总体的一个执行流程，然后根据这个流程再去看代码要清晰很多，最开始的时候没理清步骤，直接看的代码，那种感觉就像第一天学 DDD 一样，直接一脸懵逼，怎么这么多包，卧槽，第一遍下来大概只学到了百分之五十吧，这一遍大概只学到了整体架构，具体的细节还没掌握，下一次努力啃啃细节，如果要我写整个这一套代码，我肯定写出来会报很多错，但是第一次就想学透整个路程怎么可能呢？好在这一次理清了整体架构，至少有了头绪，不至于开不了头，有了头绪，到处搜一搜，拼拼凑凑也能写，哈哈哈</p>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+

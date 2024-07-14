@@ -1,8 +1,8 @@
-<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务" aria-hidden="true">#</a> 任务</h3>
+<template><div><h3 id="任务" tabindex="-1"><a class="header-anchor" href="#任务"><span>任务</span></a></h3>
 <ul>
 <li>[x] 模板模式处理抽奖流程</li>
 </ul>
-<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程" aria-hidden="true">#</a> 学习过程</h3>
+<h3 id="学习过程" tabindex="-1"><a class="header-anchor" href="#学习过程"><span>学习过程</span></a></h3>
 <ol>
 <li>
 <p>因为之前没学过设计模式，先学一学模板模式，用到一种学一种，哈哈哈</p>
@@ -42,7 +42,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题" aria-hidden="true">#</a> 遇到的问题</h3>
+<h3 id="遇到的问题" tabindex="-1"><a class="header-anchor" href="#遇到的问题"><span>遇到的问题</span></a></h3>
 <p>相对于前两天，今天的内容算容易的，因为只有一个模板设计模式没学过，只要理清了思路、理清代码执行流程，今天应该算容易的</p>
 <ol>
 <li>
@@ -50,7 +50,7 @@
 <p>今天太晚了，先注销那个判断吧，待会儿搞完又不想睡觉了，后面也会解决这个 bug 吧，先睡觉咯 <code v-pre>:TODO</code></p>
 </li>
 </ol>
-<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h3>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h3>
 <p>今天主要就两件事，先学习模板设计模式，然后使用模板设计模式来组织抽奖流程，主要就是通过一系列的封装，把公用的代码提取出来，比如配置、执行流程、以及公用仓储服务，然后把接口留给实现类而达到同一套代码，不同的处理方法</p>
 <p>收获：</p>
 <ol>
@@ -59,16 +59,4 @@
 </ol>
 </div></template>
 
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
+
