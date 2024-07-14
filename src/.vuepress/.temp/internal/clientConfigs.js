@@ -9,7 +9,6 @@ import * as clientConfig7 from 'C:/Users/10023/Desktop/fun/PUPPETLOG/node_module
 import * as clientConfig8 from 'C:/Users/10023/Desktop/fun/PUPPETLOG/src/.vuepress/.temp/md-enhance/config.js'
 import * as clientConfig9 from 'C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'
 import * as clientConfig10 from 'C:/Users/10023/Desktop/fun/PUPPETLOG/src/.vuepress/.temp/theme-hope/config.js'
-import * as clientConfig11 from 'C:/Users/10023/Desktop/fun/PUPPETLOG/node_modules/@vuepress/plugin-baidu-analytics/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -23,5 +22,4 @@ export const clientConfigs = [
   clientConfig8,
   clientConfig9,
   clientConfig10,
-  clientConfig11,
 ].map((m) => m.default).filter(Boolean)
