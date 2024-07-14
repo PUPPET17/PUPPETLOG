@@ -51,17 +51,3 @@ category:
 1. 对 DDD 有更深的了解，知道什么类该写在什么包下，比昨天更清楚代码该如何组织了
 2. 了解了分库分表，虽然是第一次接触，但是至少知道了为什么要分库分表，随着项目的进行，就会学会如何分库分表了吧
 3. 了解了 Hash 散列算法，后续看看源码，要搞清楚底层是如何运作的
-
-<script>
-  export default {
-  onload() {
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dde81d59b7c7aafd3069d07bdb17e1a1";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  }
-}
-</script>
