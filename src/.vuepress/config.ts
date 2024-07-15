@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from '@vuepress/bundler-vite'
 import theme from "./theme.js";
-import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -15,9 +15,9 @@ export default defineUserConfig({
 
   theme,
   plugins: [
-    baiduAnalyticsPlugin({
+    googleAnalyticsPlugin({
       // 配置项
-      id: 'dde81d59b7c7aafd3069d07bdb17e1a1',
+      id: 'G-Y7E011YCDJ'
     }),
   ],
 });
