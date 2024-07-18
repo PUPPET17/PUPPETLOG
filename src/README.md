@@ -47,7 +47,7 @@ footer: |-
 <div style="background: #f7f7f7; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
     <p style="flex: 1; max-width: 50%; font-size: 18px; font-weight: bold; margin: 0 20px;">
-      我是一名热爱技术的程序员，自从踏入这个充满挑战与机遇的专业以来，我始终保持着对技术的高度热情和追求。我深信技术的力量可以改变世界，也能够提升个人的专业素养。在日常工作中，我不仅注重个人技能的提升，更致力于跟踪和学习行业内的最新技术动态，如SpringBoot、微服务架构、容器化技术等，以确保自己的技术栈始终保持现代化和竞争力。
+      我是一名热爱技术的程序员，自从踏入这个充满挑战与机遇的专业以来，我始终保持着对技术的高度热情和追求。我深信技术的力量可以改变世界，也能够提升个人的专业素养。在日常工作学习和生活中，我不仅注重个人技能的提升，更致力于跟踪和学习行业内的最新技术动态，如SpringBoot、微服务架构、容器化技术等，以确保自己的技术栈始终保持现代化和竞争力。
     </p>
     <div style="flex: 1; display: flex; flex-direction: column; align-items: stretch;">
       <!-- Frameworks and Tools Section -->
